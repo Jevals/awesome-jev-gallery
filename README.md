@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-133-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-134-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-35-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-36-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-20-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-96-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-97-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (35)
+- [🧪 Open Source](#-open-source) (36)
 - [🔧 Built with Jev](#-built-with-jev) (33)
 - [📊 Independent Evaluations](#-independent-evaluations) (21)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 133 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 134 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 35 open models and codebases rebuild the System One shape, and 20 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 36 open models and codebases rebuild the System One shape, and 20 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -66,6 +66,7 @@ What TypeSafe has published, kept to the load-bearing pages: the launch post, th
 
 Open weights and code that rebuild the System One shape from encoders, small decoders and constrained decoding.
 
+- [Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1), Apache-2.0 bilingual (English/Chinese) typed decision model on mmBERT-small (144.3M parameters) that returns calibrated Choice, Score and Noul probabilities in one forward pass; authors report typed-decisions 0.906 (en, specialist: fitted on this dataset's train split) / 0.848 (zh, machine-translated cases) at 21.0 ms p50 on an RTX 5090. [![Code](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Phocinae/Phocinae-Largha-150M-v1) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1)
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow), Local Jev-compatible decisions on Spark-X2.5 through llama.cpp; authors report 49 ms p50 for short Q8_0 decisions on an RTX 5060 Ti, with uncalibrated probabilities by default. [![Code](https://img.shields.io/github/stars/Rizzo-AI-Academy/rizzo-flow?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Rizzo-AI-Academy/rizzo-flow) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://rizzo-ai-academy.github.io/rizzo-flow/)
 - [Open-Jev (ZefanCai)](https://github.com/Zefan-Cai/Open-Jev), Released Qwen3.5-2B and 9B LoRA adapters with scalar decision heads and a public dataset; the 9B model answers 179 of 231 public JevBench tasks correctly in the authors' evaluation. [![Code](https://img.shields.io/github/stars/Zefan-Cai/Open-Jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Zefan-Cai/Open-Jev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/ZefanCai/Open-Jev-9B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://zefan-cai.github.io/open-jev/)
 - [Dohnuts](https://github.com/PsiACE/dohnuts), 0.8B text-and-image decision model trained on one RX 7900 XTX; authors report 65.8% accuracy on 231 public JevBench tasks; Apache-2.0 code and non-commercial CC BY-NC-SA 4.0 weights. [![Code](https://img.shields.io/github/stars/PsiACE/dohnuts?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/PsiACE/dohnuts) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B)
